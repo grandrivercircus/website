@@ -9,10 +9,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Grand River Circus - Aerial and Acrobatic Entertainment</title>
+    <title>Grand River Circus | Gallery</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Bootstrap glueimp gallery -->
+    <link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+    <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
 
     <!-- Custom CSS -->
     <link href="css/half-slider.css" rel="stylesheet">
@@ -22,11 +26,6 @@
         /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     }
     </style>
-
-    <!--Lightbox-->
-     <link href="css/ekko-lightbox.css" rel="stylesheet">
-     <script src="js/ekko-lightbox.js"></script>
-
 
     <!-- Fonts from Google -->
     <link href='https://fonts.googleapis.com/css?family=Coming+Soon|Allura' rel='stylesheet' type='text/css'>
@@ -53,22 +52,22 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Grand River Circus</a>
+                <a class="navbar-brand" href="index.html">Grand River Circus</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#">About</a>
+                        <a href="about.html">About</a>
                     </li>
                     <li>
-                        <a href="#">Acts For Hire</a>
+                        <a href="acts_for_hire.html">Acts For Hire</a>
                     </li>
                     <li>
-                        <a href="#">Gallery</a>
+                        <a href="gallery.html">Gallery</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -77,75 +76,130 @@
         <!-- /.container -->
     </nav>
 
+    <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+    <div id="blueimp-gallery" class="blueimp-gallery" data-use-bootstrap-modal="false">
+        <!-- The container for the modal slides -->
+        <div class="slides"></div>
+        <!-- Controls for the borderless lightbox -->
+        <h3 class="title"></h3>
+        <a class="prev">‹</a>
+        <a class="next">›</a>
+        <a class="close">×</a>
+        <a class="play-pause"></a>
+        <ol class="indicator"></ol>
+        <!-- The modal dialog, which will be used to wrap the lightbox content -->
+        <div class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title"></h4>
+                    </div>
+                    <div class="modal-body next"></div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default pull-left prev">
+                            <i class="glyphicon glyphicon-chevron-left"></i>
+                            Previous
+                        </button>
+                        <button type="button" class="btn btn-primary next">
+                            Next
+                            <i class="glyphicon glyphicon-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Page Content -->
     <div class="container">
 
         <div class="row">
+            <div id="links">
+                <div class="col-lg-12">
+                    <h1 class="page-header" id="image-gallery">Gallery</h1>
+                </div>
 
-            <div class="col-lg-12">
-                <h1 class="page-header" id="image-gallery">Thumbnail Gallery</h1>
-                <p>Test test test test test</p>
-            </div>
-
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#" data-toggle="lightbox" data-gallery="multiimages" data-title="">
-                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                </a>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class = "thumbnail" href="Images/trap.jpg" title="" data-gallery>
+                        <img src="Images/trap.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class = "thumbnail" href="Images/silks1.jpg" title="" data-gallery>
+                        <img src="Images/silks1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class = "thumbnail" href="Images/silks4.jpg" title="" data-gallery>
+                        <img src="Images/silks4.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class = "thumbnail" href="Images/outside2.jpg" title="" data-gallery>
+                        <img src="Images/outside2.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class = "thumbnail" href="Images/backtoback.jpg" title="" data-gallery>
+                        <img src="Images/backtoback.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class = "thumbnail" href="Images/mac.jpg" title="" data-gallery>
+                        <img src="Images/mac.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class = "thumbnail" href="Images/silksdoubles.jpg" title="" data-gallery>
+                        <img src="Images/silksdoubles.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class = "thumbnail" href="Images/backbalance.jpg" title="" data-gallery>
+                        <img src="Images/backbalance.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class = "thumbnail" href="Images/roofhs.jpg" title="" data-gallery>
+                        <img src="Images/roofhs.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class = "thumbnail" href="Images/kensington1.jpg" title="" data-gallery>
+                        <img src="Images/kensington1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class = "thumbnail" href="Images/fnl.jpg" title="" data-gallery>
+                        <img src="Images/fnl.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class = "thumbnail" href="Images/scary.jpg" title="" data-gallery>
+                        <img src="Images/scary.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class = "thumbnail" href="Images/shoeshow1.jpg" title="" data-gallery>
+                        <img src="Images/shoeshow1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class = "thumbnail" href="Images/shoeshow2.jpg" title="" data-gallery>
+                        <img src="Images/shoeshow2.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class = "thumbnail" href="Images/shoeshow3.jpg" title="" data-gallery>
+                        <img src="Images/shoeshow3.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class = "thumbnail" href="Images/shoeshow4.jpg" title="" data-gallery>
+                        <img src="Images/shoeshow4.jpg" alt="">
+                    </a>
+                </div>
             </div>
         </div>
 
@@ -155,19 +209,23 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
+                    <p>Copyright &copy; Grand River Circus 2016</p>
                 </div>
             </div>
         </footer>
 
     </div>
     <!-- /.container -->
-
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
+
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+    <script src="js/bootstrap-image-gallery.min.js"></script>
 
 </body>
 

@@ -5004,10 +5004,10 @@ a.badge:focus {
 }
 .thumbnail {
   display: block;
-  padding: 4px;
+  height: 200px;
+  overflow: hidden;
   margin-bottom: 20px;
   line-height: 1.42857143;
-  background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 4px;
   -webkit-transition: border .2s ease-in-out;
@@ -5018,6 +5018,10 @@ a.badge:focus {
 .thumbnail a > img {
   margin-right: auto;
   margin-left: auto;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  top: 50%;
 }
 a.thumbnail:hover,
 a.thumbnail:focus,
